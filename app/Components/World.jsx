@@ -1,7 +1,6 @@
 import React from 'react';
 
 const countries = {
-  "North America": ["United States", "Mexico"],
   Europe: [
     "United Kingdom", "Ireland", "Lithuania", "Estonia", "Latvia", "Poland", "Romania", "Hungary",
     "France", "Ukraine", "Sweden", "Belgium", "Czech Republic", "Croatia", "Bulgaria", "Slovakia",
