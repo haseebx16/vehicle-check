@@ -6,7 +6,8 @@ const countries = {
     "United Kingdom", "Ireland", "Lithuania", "Estonia", "Latvia", "Poland", "Romania", "Hungary",
     "France", "Ukraine", "Sweden", "Belgium", "Czech Republic", "Croatia", "Bulgaria", "Slovakia",
     "Serbia", "Finland", "Slovenia", "Germany", "Italy", "Switzerland", "Denmark", "Spain", "Portugal", "Greece"
-  ]
+  ],
+  Oceania: ["Australia"]
 };
 
 // Mapping country names to flag image file names (you can update this as needed)
@@ -17,7 +18,7 @@ const countryToFlag = {
   "Ireland": "ireland.png",
   "Lithuania": "lithuania.png",
   "Estonia": "estonia.png",
-  "Latvia": "latvia.png",
+  "Latvia": "lativia.png",
   "Poland": "poland.png",
   "Romania": "romania.png",
   "Hungary": "hungary.png",
@@ -39,6 +40,7 @@ const countryToFlag = {
   "Spain": "spain.png",
   "Portugal": "portugal.png",
   "Greece": "greece.png",
+  "Australia": "australia.png"
 };
 
 const World = () => {
@@ -78,7 +80,7 @@ const World = () => {
                     className="flex items-center gap-2 bg-white px-3 py-1 rounded-full shadow-sm border text-sm"
                   >
                     <img
-                      src={`/flags/${countryToFlag[country] || 'default.png'}`}
+                      src={`/${countryToFlag[country] || 'default.png'}`}
                       alt={`${country} flag`}
                       className="w-5 h-5 rounded-full object-cover"
                     />
