@@ -9,7 +9,6 @@ const countries = {
   Oceania: ["Australia"]
 };
 
-// Mapping country names to flag image file names (you can update this as needed)
 const countryToFlag = {
   "United States": "us.png",
   "Mexico": "mexico.png",
@@ -44,21 +43,16 @@ const countryToFlag = {
 
 const World = () => {
   return (
-    <div className="relative text-black py-16 px-6 md:px-20">
-      {/* Background image */}
+    <div id='about' className="relative text-black py-16 px-6 md:px-20">
       <div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: "url('/world.jpeg')" }}
       ></div>
 
-      {/* White overlay */}
       <div className="absolute inset-0 z-0 bg-white/20"></div>
-
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-12">
-        {/* Left Section */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          <h1  className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             Empowering the <br /> Future of Automotive Data
           </h1>
           <p className="text-lg max-w-md">
@@ -67,7 +61,6 @@ const World = () => {
           </p>
         </div>
 
-        {/* Right Section */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6">
           {Object.entries(countries).map(([region, countryList]) => (
             <div key={region}>

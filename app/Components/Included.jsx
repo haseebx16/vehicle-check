@@ -3,7 +3,7 @@ import { font } from './font/font'
 
 const Included = () => {
   return (
-    <div className={`${font.className} bg-white flex flex-col p-8 md:p-20 justify-center items-center text-black`}>
+    <div id='services' className={`${font.className} bg-white flex flex-col p-8 md:p-20 justify-center items-center text-black`}>
         <h1 className='font-bold text-4xl'>Discover What's Included in Your Vehicle Record</h1>
         <div className='flex md:flex-row flex-col  md:space-y-0 space-y-6 md:space-x-6 justify-center items-center'>
             <div className='flex flex-col justify-center h-[33rem] mt-8 bg-white md:w-[30%] p-8 rounded-md shadow-md hover:shadow-2xl duration-300 shadow-black items-center'>
